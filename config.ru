@@ -1,4 +1,4 @@
-require "greeter"
+require "./application"
 
 use Rack::Reloader, 0
-run Rack::Cascade.new([Rack::File.new("public"), Greeter])
+run Rack::Cascade.new([Rack::File.new("public"), Application])
