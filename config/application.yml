@@ -1,1 +1,1 @@
-EMAIL_ADMIN_RECEIVER = 'thiennguyen.mark@gmail.com'
+EMAIL_ADMIN_RECEIVER: 'thiennguyen.mark@gmail.com'
