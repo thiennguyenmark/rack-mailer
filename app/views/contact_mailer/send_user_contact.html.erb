@@ -1,0 +1,17 @@
+<h1>You've got new contact from <%= ENV['FROM_EMAIL'] %></h1>
+
+<h2>Subject:</h2>
+<p><%= @item[:subject] %></p>
+
+<h2>User name:</h2>
+<p><%= @item[:name] %> </p>
+
+<h2>User Email:</h2>
+<p><%= @item[:email] %> </p>
+
+<h2>User Phone Number:</h2>
+
+<p><%= @item[:phone_number] %></p>
+
+<h2>Message:</h2>
+<p><%= @item[:message] %></p>

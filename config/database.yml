@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  template: template0
+  username: b
+  password:
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: rack-mailer-development
+
+test:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

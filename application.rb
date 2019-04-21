@@ -14,7 +14,7 @@ class Application
   def response
     case @request.path
     when "/" then Rack::Response.new(render("index.html.erb"))
-    when "/mail" then
+    when "/done" then
       Rack::Response.new(render("done.html.erb")) do
         puts '-----------> Your job will be excuted here'
         ContactJob.perform_async contact_object(@request.params)
